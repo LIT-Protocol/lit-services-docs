@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Lit Protocol Services',
   tagline: 'Guides for official Lit Protocol integrations',
-  url: 'https://reverent-kowalevski-342508.netlify.app/',
+  url: 'https://lit-services-docs.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -75,7 +75,7 @@ const config = {
               },
               {
                 label: "JS SDK",
-                to: "/docs/SDK/intro",
+                to: "/docs/intro",
               },
             ],
           },
