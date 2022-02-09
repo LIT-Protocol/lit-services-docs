@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Lit Protocol Services',
   tagline: 'Guides for official Lit Protocol integrations',
-  url: 'https://lit-protocol.github.io/',
-  baseUrl: '/lit-services-docs/',
+  url: 'https://reverent-kowalevski-342508.netlify.app/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Lit Protocol', // Usually your GitHub org/user name.
+  projectName: 'Lit Services Documentation', // Usually your repo name.
 
   presets: [
     [
