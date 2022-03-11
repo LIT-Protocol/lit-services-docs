@@ -36,7 +36,7 @@ Creating a new product template is highly recommended. It is possible to circumv
 
 ![step7](/img/shopify_create_template/shopify_create_template_7.png)
 
-8. Select the **Lit Gateway: Token Access** block to add.
+8. Select the **Lit Token Access** block to add.
 
 ![step8](/img/shopify_create_template/shopify_create_template_8.png)
 

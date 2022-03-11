@@ -27,7 +27,7 @@ On products with an associated **exclusive**, the block will remove the **Buy** 
 
 ![step4](/img/shopify_add_block/shopify_add_block_4.png)
 
-5. Select the **Lit Gateway: Token Access** block to add it.
+5. Select the **Lit Token Access** block to add it.
 
 ![step5](/img/shopify_add_block/shopify_add_block_5.png)
 
