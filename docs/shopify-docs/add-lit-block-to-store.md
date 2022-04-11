@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Add Lit Block to store
+# Add Lit App Block to store
 
-The Lit Block is an app-theme-extension used to show customers which products have been gated.
+The Lit App Block is an theme-app-extension used to show customers which products have been gated.
 
 On products with an associated **discount**, the block will render in addition to the **Buy** and **Add to cart** buttons.
 
@@ -27,10 +27,11 @@ On products with an associated **exclusive**, the block will remove the **Buy** 
 ![step5](/img/shopify_add_block/shopify_add_block_5.png)
 ![step5-5](/img/shopify_add_block/shopify_add_block_5-5.png)
 
-6. Click the **Save** button in the very top right of the screen. The **Lit App Block** will now render on product pages that have been gated with Token Access.
+
+7. Click the **Save** button in the very top right of the screen. The **Lit App Block** will now render on product pages that have been gated with Token Access.
 ![step6](/img/shopify_add_block/shopify_add_block_6.png)
 
-7. Optional -  The colors and text of the block can now be customized to match your store's theme.
+8. Optional -  The colors and text of the block can now be customized to match your store's theme.
 ![step7](/img/shopify_add_block/shopify_add_block_7.png)
 
 
