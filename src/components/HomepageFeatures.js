@@ -3,33 +3,35 @@ import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
-  {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        So easy to use that afterwards you'll wonder what's the purpose of doing anything at all?
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        User-friendly integrations let you focus on what you want to accomplish during our short time on earth.
-      </>
-    ),
-  },
-  {
-    title: 'Decentralized',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Decentralized access control means files can only be seen by who you want. As the years pass, those people will fade away until your documents are secured forever, forgotten and alone.
-      </>
-    ),
-  },
+  // {
+  //   title: 'Easy to Use',
+  //   Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+  //   description: (
+  //     <>
+  //       {/*So easy to use that afterwards you'll wonder what's the purpose of doing anything at all?*/}
+  //       Easy to use extensions allow content to be accessed by only those you want.
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: 'Focus on What Matters',
+  //   Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+  //   description: (
+  //     <>
+  //       Integrations with major services allow you to focus.
+  //       {/*User-friendly integrations let you focus on what you want to accomplish during our short time on earth.*/}
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: 'Decentralized',
+  //   Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+  //   description: (
+  //     <>
+  //       Decentralized access control means files can only be seen by who you want. As the years pass, those people will fade away until your documents are secured forever, forgotten and alone.
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({Svg, title, description}) {
