@@ -27,10 +27,10 @@ On products with an associated **exclusive**, the block will remove the **Buy** 
 
 ![step4](/img/shopify_add_block/shopify_add_block_4.png)
 
-5. Select the **Lit Token Access** block to add it.
+5. Select the **Lit App Block** to add it.  It can be placed anywhere, but we recommend having it next to the **Buy buttons**.
 
 ![step5](/img/shopify_add_block/shopify_add_block_5.png)
 
-6. Block will now render on product pages that have been gated with Token Access.
+6. Click the button in the top right to save. The **Lit App Block** will now render on product pages that have been gated with Token Access.
 
 ![step6](/img/shopify_add_block/shopify_add_block_6.png)
