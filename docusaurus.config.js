@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'Lit Protocol', // Usually your GitHub org/user name.
   projectName: 'Lit Services Documentation', // Usually your repo name.
 
