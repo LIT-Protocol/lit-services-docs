@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-## Getting Started
+# Getting Started
 
 To use any integrated Lit service you will need access to Metamask or Wallet Connect.
 

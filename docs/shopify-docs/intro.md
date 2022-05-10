@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Introduction
-**Lit Protocol: Token Access** is a Shopify app that allows merchants to gate exclusive content and discounts, ensuring access to select parties only.
+**[Lit Protocol: Token Access](https://apps.shopify.com/lit-token-access)** is a Shopify app that allows merchants to gate exclusive content and discounts, ensuring access to select parties only.
 
 ## Install
 Although a public version is in the works, **Lit Protocol: Token Access** is currently a custom app and available by request only. 
