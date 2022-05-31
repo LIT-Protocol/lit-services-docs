@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 The Lit Share Modal v3 is a tool for creating access control conditions for securing content with Lit Protocol.
 [Click here to visit the Lit Protocol developer docs.](https://developer.litprotocol.com/docs/intro/)
 
