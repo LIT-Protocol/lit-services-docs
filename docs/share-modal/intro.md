@@ -1,9 +1,3 @@
----
-sidebar_position: 1
----
-
-# Intro
-
 The Lit Share Modal v3 is a tool for creating access control conditions for securing content with Lit Protocol.
 [Click here to visit the Lit Protocol developer docs.](https://developer.litprotocol.com/docs/intro/)
 
@@ -11,7 +5,7 @@ The Lit Share Modal v3 is a tool for creating access control conditions for secu
 - Create multiple paths for unlocking content by using AND/OR operators.
 - Set your most used tokens/NFTs as defaults for quick and easy access.
 
-![Lit Share Modal](./shareModalCover.png)
+![Lit Share Modal](src/assets/shareModalCover.png)
 
 A Vanilla JS wrapper for the Lit Share Modal is also available.
 
@@ -86,7 +80,7 @@ the [LitJsSdk docs](https://lit-protocol.github.io/lit-js-sdk/api_docs_html/inde
 
 - `darkTheme` - `false` by default. Setting as `true` to enable dark mode.
 - `defaultChain` - `ethereum` by default.  Can be set to `solana` to make Solana the default chain on load.
-- `disableChainSelector` - `false` by default. Setting as `true` will prevent users from switching between different chain conditions types e.g. switching from Ethereum to Solana.
+- `allowChainSelector` - `true` by default. Setting as `false` will prevent users from switching between different chain conditions types e.g. switching from Ethereum to Solana.
 - `allowMultipleConditions` - `true` by default. Setting to `false` will disable the multiple conditions screen and only allow the creation of single control conditions.
 - `permanentDefault` - `false` by default. Setting to `true` will check by default the box that makes conditions uneditable.
 - `isModal` - `true` by default. Setting to `false` will hide the close icon in the header.
