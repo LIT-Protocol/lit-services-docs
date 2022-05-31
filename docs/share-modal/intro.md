@@ -116,4 +116,4 @@ export const defaultTokens = [
 
 ### `cssSubstitution` prop
 
-More information coming soon
+**[More information can be found here](cssSubstitution.md)**
