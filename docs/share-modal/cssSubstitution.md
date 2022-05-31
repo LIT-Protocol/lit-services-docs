@@ -2,6 +2,6 @@
 sidebar_position: 4
 ---
 
-# `cssSubstitution`  prop
+# `cssSubstitution` prop
 
-Working on this right now, bear with me
+Still working on this documentation, bear with us for a touch longer
