@@ -15,7 +15,32 @@ There are in no particular order, but they are what is in active development.
 
 ### Recent Additions
 
-2022-5-9
+<strong>6-8-2022</strong>
+    <ul>
+      <li>
+        <strong>IMPORTANT!: </strong> if something breaks regarding this update please send a message with
+        details regarding the steps taken, chain, token type, and anything else relevant to <strong>shopifysupport@litprotocol.com</strong>
+        We've tested this thing to ensure it's backwards compatible and won't
+        mess anything up, but we're exploring new feature territory and doing a significant update behind the
+        scenes at the same time and odds are something could be funky. Let us know if that happens and we'll
+        get on fixing it.
+      </li>
+      <li>
+        <strong>Solana support is now a thing:</strong> We are happy to announce that Solana support is live
+        in the Lit Token Gating app! The modal used to create the conditions has changed as well, and now
+        offers significantly more capabilities than the previous version. A partial
+        playground is available [here]('https://lit-share-modal-v3-playground.netlify.app') where you can experiment with the new features.
+        Currently, there isn't a good way to permanently alter settings like default chain, but
+        that will be coming soon.
+      </li>
+      <li>
+        <strong>Update to Vite:</strong> behind the scenes, we've updated the app from NextJS to Vite.
+        What does this mean for your store? Hopefully nothing, but it makes our lives easier and
+        took a bit of time so we thought we'd say something about it.
+      </li>
+    </ul>
+
+<strong>5-9-2022</strong>
 
 - <strong>Limit on number of redemptions per wallet</strong>: in
   the <strong>Create Token Access</strong>
