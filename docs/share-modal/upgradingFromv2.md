@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Upgrading from Share Modal v2
 
-This is a brief summary of how to move from the EVM Basic conditions used in the **[old Lit Share Modal](https://www.npmjs.com/package/lit-share-modal)** to the new Unified Access Control Condition format used in the new v3 build.  **[More information on Unified Access Control Conditions can be found here](https://developer.litprotocol.com/docs/AccessControlConditions/unifiedAccessControlConditions)**
+This is a brief summary of how to move from the (EVM only) **Access Control Conditions** format used in the **[old Lit Share Modal](https://www.npmjs.com/package/lit-share-modal)** to the new **Unified Access Control Condition** format used in the new v3 build.  **[More information on Unified Access Control Conditions can be found here](https://developer.litprotocol.com/docs/AccessControlConditions/unifiedAccessControlConditions)**
 
 There are two changes to be aware: first, the additions of a `chain` property within each individual condition of itself defines what kind of AuthSig is required to register it, and, second, a change in the syntax of the object passed to the `saveSigningConditions` method in the `litNodeClient`. 
 
@@ -12,7 +12,7 @@ There are two changes to be aware: first, the additions of a `chain` property wi
 
 Within the individual conditions, a new `chain` property has been added.  The share modal currently supports **Solana** and **EVM** chains, which use the values `'solRpc'` and `'ethereum'` to differentiate.
 
-Previous (EVM only) Access Control Condition format:
+Previous (EVM only) **Access Control Conditions** format:
 
 ```
 const accessControlConditions = [
@@ -33,7 +33,7 @@ const accessControlConditions = [
 ]
 ```
 
-New Unified Access Control Conditions format (for EVM):
+New **Unified Access Control Conditions** format (for EVM):
 
 ```
 const unifiedAccessControlConditions = [
@@ -112,8 +112,6 @@ const unifiedAccessControlConditions = [
 ```
 
 ### `saveSigningCondition` syntax change
-
-A separate AuthSig is required for each condition type included in a **Unified Access Control Conditions** array.
 
 Previous (EVM only) Access Control Condition format:
 
