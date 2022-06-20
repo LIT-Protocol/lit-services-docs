@@ -15,8 +15,8 @@ passed to the `saveSigningConditions` and `getSignedToken` methods in the `litNo
 
 ### New `conditionType` property
 
-Within the individual conditions, a new `conditionType` property has been added. The share modal currently supports **
-Solana** and **EVM** chains, which use the values `'solRpc'` and `'evmBasic'` to differentiate.
+Within the individual conditions, a new `conditionType` property has been added. The share modal currently supports
+**Solana** and **EVM** chains, which use the values `'solRpc'` and `'evmBasic'` to differentiate.
 
 Old (EVM only) **Access Control Conditions** format for checking a wallet with address
 0x50e2dac5e78B5905CB09495547452cEE64426db2.
@@ -46,9 +46,9 @@ property.
 const unifiedAccessControlConditions = [
   {
     conditionType: 'evmBasic',
-    chain: 'ethereum',
     contractAddress: '',
     standardContractType: '',
+    chain: 'ethereum',
     method: '',
     parameters: [
       ':userAddress',
@@ -83,7 +83,7 @@ const unifiedAccessControlConditions = [
 ]
 ```
 
-Conditions from EVM chains can be combined with Solana using **AND/OR** operators. This example checks for ownership of
+Conditions from different chains can be combined using **AND/OR** operators. This example checks for ownership of
 an EVM wallet of address 0x50e2dac5e78B5905CB09495547452cEE64426db2 **OR** ownership of a Solana wallet with address
 6XmeyeYtSd31Eby2syaRkpXKY2GMMd3n3MEwTM5B7riD.
 
@@ -122,7 +122,7 @@ const unifiedAccessControlConditions = [
 
 ### `saveSigningCondition` syntax change
 
-Old (EVM only) **Access Control Condition** format:
+Old (EVM only) **Access Control Condition** format for saving conditions:
 
 ```
 var ethAuthSig = await LitJsSdk.checkAndSignAuthMessage({
@@ -140,8 +140,8 @@ New **Unified Access Control Conditions** format. The new format passes in a dif
 under a specific property name. Note too, the change from `accessControlConditions` to `unifiedAccessControlConditions`.
 Here is an example of what it would look like to save conditions that used both **Solana** and **EVM** condition types.
 
-**Note**: if saving only **EVM** conditions, only an `'ethereum'` authSig is required. Likewise, if only **Solana**
-conditions are saved, only a `'solana'` authSig is required.
+**Note**: if saving only **EVM** conditions, only an `'ethereum'` AuthSig is required. Likewise, if only **Solana**
+conditions are saved, only a `'solana'` AuthSig is required.
 
 ```
 var solAuthSig = await LitJsSdk.checkAndSignAuthMessage({
