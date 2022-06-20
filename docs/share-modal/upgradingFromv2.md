@@ -6,11 +6,11 @@ sidebar_position: 2
 
 This is a brief summary of how to move from the (EVM only) **Access Control Conditions** format used in the **[old Lit Share Modal](https://www.npmjs.com/package/lit-share-modal)** to the new **Unified Access Control Condition** format used in the new v3 build.  **[More information on Unified Access Control Conditions can be found here](https://developer.litprotocol.com/docs/AccessControlConditions/unifiedAccessControlConditions)**
 
-There are two changes to be aware: first, the additions of a `chain` property within each individual condition of itself defines what kind of AuthSig is required to register it, and, second, a change in the syntax of the object passed to the `saveSigningConditions` method in the `litNodeClient`. 
+There are two changes to be aware: first, the additions of a `conditionType` property within each individual condition of itself defines what kind of AuthSig is required to register it, and, second, a change in the syntax of the object passed to the `saveSigningConditions` method in the `litNodeClient`. 
 
-### New `chain` property
+### New `conditionType` property
 
-Within the individual conditions, a new `chain` property has been added.  The share modal currently supports **Solana** and **EVM** chains, which use the values `'solRpc'` and `'evmBasic'` to differentiate.
+Within the individual conditions, a new `conditionType` property has been added.  The share modal currently supports **Solana** and **EVM** chains, which use the values `'solRpc'` and `'evmBasic'` to differentiate.
 
 Old (EVM only) **Access Control Conditions** format for checking a wallet with address 0x50e2dac5e78B5905CB09495547452cEE64426db2.
 
@@ -32,7 +32,7 @@ const accessControlConditions = [
 ]
 ```
 
-New **Unified Access Control Conditions** format far same condition as above.  Note the addition of the `chain` property.
+New **Unified Access Control Conditions** format far same condition as above.  Note the addition of the `conditionType` property.
 
 ```
 const unifiedAccessControlConditions = [
@@ -53,7 +53,7 @@ const unifiedAccessControlConditions = [
 ]
 ```
 
-The new format can also be used to denote **Solana** conditions.  Note the change of the chain condition to `'solRpc'`.  Here is an example of checking for a wallet with address 88PoAjLoSqrTjH2cdRWq4JEezhSdDBw3g7Qa6qKQurxA.
+The new format can also be used to denote **Solana** conditions.  Note the change of the `conditionType` to `'solRpc'`.  Here is an example of checking for a wallet with address 88PoAjLoSqrTjH2cdRWq4JEezhSdDBw3g7Qa6qKQurxA.
 
 ```
 const unifiedAccessControlConditions = [
