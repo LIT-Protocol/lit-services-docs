@@ -175,7 +175,7 @@ var ethAuthSig = await LitJsSdk.checkAndSignAuthMessage({
   chain: "ethereum",
 });
 
-await litNodeClient.saveSigningCondition({
+await litNodeClient.getSignedToken({
   unifiedAccessControlConditions,
   authSig: {
     solana: solAuthSig,
