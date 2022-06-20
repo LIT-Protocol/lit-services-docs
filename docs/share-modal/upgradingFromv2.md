@@ -10,88 +10,86 @@ There are two changes to be aware: first, the additions of a `chain` property wi
 
 ### New `chain` property
 
-Within the individual conditions, a new `chain` property has been added.  The share modal currently supports **Solana** and **EVM** chains, which use the values `'solRpc'` and `'ethereum'` to differentiate.
+Within the individual conditions, a new `chain` property has been added.  The share modal currently supports **Solana** and **EVM** chains, which use the values `'solRpc'` and `'evmBasic'` to differentiate.
 
-Old (EVM only) **Access Control Conditions** format:
+Old (EVM only) **Access Control Conditions** format for checking a wallet with address 0x50e2dac5e78B5905CB09495547452cEE64426db2.
 
 ```
 const accessControlConditions = [
   {
-    contractAddress: '0x3110c39b428221012934A7F617913b095BC1078C',
-    standardContractType: 'ERC1155',
-    chain,
-    method: 'balanceOf',
+    contractAddress: '',
+    standardContractType: '',
+    chain: 'ethereum',
+    method: '',
     parameters: [
       ':userAddress',
-      '9541'
     ],
     returnValueTest: {
-      comparator: '>',
-      value: '0'
+      comparator: '=',
+      value: '0x50e2dac5e78B5905CB09495547452cEE64426db2'
     }
   }
 ]
 ```
 
-New **Unified Access Control Conditions** format (for EVM):
+New **Unified Access Control Conditions** format far same condition as above.  Note the addition of the `chain` property.
 
 ```
 const unifiedAccessControlConditions = [
   {
+    conditionType: 'evmBasic',
     chain: 'ethereum',
-    contractAddress: '0x3110c39b428221012934A7F617913b095BC1078C',
-    standardContractType: 'ERC1155',
-    chain,
-    method: 'balanceOf',
+    contractAddress: '',
+    standardContractType: '',
+    method: '',
     parameters: [
       ':userAddress',
-      '9541'
     ],
     returnValueTest: {
-      comparator: '>',
-      value: '0'
+      comparator: '=',
+      value: '0x50e2dac5e78B5905CB09495547452cEE64426db2'
     }
   }
 ]
 ```
 
-Note the addition of the `chain` property, which can also be used to denote **Solana** conditions:
+The new format can also be used to denote **Solana** conditions.  Note the change of the chain condition to `'solRpc'`.  Here is an example of checking for a wallet with address 88PoAjLoSqrTjH2cdRWq4JEezhSdDBw3g7Qa6qKQurxA.
 
 ```
 const unifiedAccessControlConditions = [
   {
     conditionType: 'solRpc',
-    method: ',
+    method: "",
     params: [
-      :userAddress'
+      ":userAddress"
     ],
     chain: 'solana',
     returnValueTest: {
-      key: ',
-      comparator: '=',
-      value: '6XmeyeYtSd31Eby2syaRkpXKY2GMMd3n3MEwTM5B7riD'
-    }
+      key: "",
+      comparator: "=",
+      value: "88PoAjLoSqrTjH2cdRWq4JEezhSdDBw3g7Qa6qKQurxA",
+    },
+  },
   }
 ]
 ```
 
-Conditions from EVM chains can be combined with Solana using **AND/OR** operators: 
+Conditions from EVM chains can be combined with Solana using **AND/OR** operators.  This example checks for ownership of an EVM wallet of address 0x50e2dac5e78B5905CB09495547452cEE64426db2 **OR** ownership of a Solana wallet with address 6XmeyeYtSd31Eby2syaRkpXKY2GMMd3n3MEwTM5B7riD.
 
 ```
 const unifiedAccessControlConditions = [
   {
+    conditionType: 'evmBasic',
+    contractAddress: '',
+    standardContractType: '',
     chain: 'ethereum',
-    contractAddress: '0x3110c39b428221012934A7F617913b095BC1078C',
-    standardContractType: 'ERC1155',
-    chain,
-    method: 'balanceOf',
+    method: '',
     parameters: [
       ':userAddress',
-      '9541'
     ],
     returnValueTest: {
-      comparator: '>',
-      value: '0'
+      comparator: '=',
+      value: '0x50e2dac5e78B5905CB09495547452cEE64426db2'
     }
   }
   { operator: 'or' },
