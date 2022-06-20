@@ -12,7 +12,7 @@ There are two changes to be aware: first, the additions of a `chain` property wi
 
 Within the individual conditions, a new `chain` property has been added.  The share modal currently supports **Solana** and **EVM** chains, which use the values `'solRpc'` and `'ethereum'` to differentiate.
 
-Previous (EVM only) **Access Control Conditions** format:
+Old (EVM only) **Access Control Conditions** format:
 
 ```
 const accessControlConditions = [
@@ -113,7 +113,7 @@ const unifiedAccessControlConditions = [
 
 ### `saveSigningCondition` syntax change
 
-Previous (EVM only) Access Control Condition format:
+Old (EVM only) **Access Control Condition** format:
 
 ```
 var ethAuthSig = await LitJsSdk.checkAndSignAuthMessage({
@@ -127,7 +127,7 @@ await litNodeClient.saveSigningCondition({
 });
 ```
 
-The new format passes in a different AuthSig for each condition type under a specific property name.  Note too, the change from `accessControlConditions` to `unifiedAccessControlConditions`.  Here is an example of the new version:
+New **Unified Access Control Conditions** format. The new format passes in a different AuthSig for each condition type under a specific property name.  Note too, the change from `accessControlConditions` to `unifiedAccessControlConditions`.  Here is an example of the new version:
 
 ```
 var solAuthSig = await LitJsSdk.checkAndSignAuthMessage({
