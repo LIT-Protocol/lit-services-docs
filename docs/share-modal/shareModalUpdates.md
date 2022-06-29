@@ -8,8 +8,8 @@ sidebar_position: 2
 
 - Removed `chain` property from `onUnifiedAccessControlConditionsSelected` and replaced it with `chains`, which is an
   array of all the chain types in a given set of conditions e.g. `['ethereum', 'solana', 'polygon', 'xdai']`.
-- Added property `authSigTypes` to `onUnifiedAccesControlConditionsSelected` that will contain the types of authSigs
-  that need to be passed into `saveSigningCondition.authSigs` and `getSignedToken.authSigs`.
+- Added property `authSigTypes` to `onUnifiedAccesControlConditionsSelected` that will contain the types of authSigs the
+  created set of conditions that need to be passed into `saveSigningCondition.authSigs` and `getSignedToken.authSigs`.
 
 ### 2022-6-28
 
