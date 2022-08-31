@@ -4,10 +4,13 @@ sidebar_position: 2
 
 # Updates
 
-### Planned features.
+[//]: # (### Planned features.)
 
-- ability to offer a store wide discount
-- letting merchants set a timeframe for the length of an offer
+[//]: # ()
+
+[//]: # (- ability to offer a store wide discount)
+
+[//]: # (- letting merchants set a timeframe for the length of an offer)
 
 ### Recent Additions
 
