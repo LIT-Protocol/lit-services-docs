@@ -6,9 +6,7 @@ sidebar_position: 6
 
 ---
 
-Creating offers is the primary focus of Lit Token Access. This guide is a short walkthrough on how to make a simple
-offer.
-offer.
+Creating offers is the primary focus of Lit Token Access. This guide is a short walkthrough on how to do so.
 
 1. Go to the nav in Shopify admin and go to the app navigator.
 
